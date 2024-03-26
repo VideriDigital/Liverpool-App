@@ -1,0 +1,19 @@
+<div class="upcoming-container">
+    <h1>Upcoming Matches</h1>
+    <hr>
+    <div class="match" *ngFor="let match of upcomingMatches">
+        <div class="match-date-time">
+                <p>{{ match.league }}</p>
+        </div>
+        <div class="match-container">
+            <div class="team home-team">
+                <img src="{{ match.homeTeamLogo}}" alt="">
+                <h4>{{ match.homeTeam }}</h4>
+            </div>
+            <div class="team away-team">
+                <img src="{{ match.awayTeamLogo}}" alt="">
+                <h4>{{ match.awayTeam }}</h4>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+.navbar-collapse {
+    justify-content: flex-end;
+  }
+  
+  .navbar.navbar-expand-lg.navbar-light.bg-light {
+    padding: 10px 10%;
+    background: rgb(220,7,20);
+    background: linear-gradient(90deg, rgba(220,7,20,1) 0%, rgba(142,5,13,1) 100%);
+    color: white;
+  }
+  
+  #navbarNav a {
+    color: white;
+  }
+  

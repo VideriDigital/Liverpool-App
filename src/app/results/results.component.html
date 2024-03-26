@@ -1,0 +1,22 @@
+<div class="results-container">
+    <h1>Latest Scores</h1>
+    <hr>
+    <div class="result" *ngFor="let result of results">
+        <div class="result-left">
+            <div class="score">
+                <h3>{{ result.homeTeamScore }}</h3>
+            </div>
+            <h4>{{ result.homeTeam }}</h4>
+            
+        </div>
+        <div class="date-time">
+        
+        </div>
+        <div class="result-right">
+            <h4>{{ result.awayTeam }}</h4>
+            <div class="score">
+                <h3>{{ result.awayTeamScore }}</h3>
+            </div>
+        </div>
+    </div>
+</div>
