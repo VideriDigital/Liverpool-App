@@ -31,10 +31,11 @@
     display: block;
     background-repeat: no-repeat;
     background-position: bottom;
-    position: relative;
-    right: -34vw;
+    position: fixed;
+    right: 50%;
     filter: drop-shadow(20px 30px 20px #51010680);
   }
+
   
   .button-group {
     width: 100%;

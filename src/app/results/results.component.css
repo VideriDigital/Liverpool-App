@@ -3,10 +3,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid #db0714;
     margin-bottom: 15px;
     border-radius: 5px;
-    box-shadow: 4px 4px 14px -5px #00000038;
+    flex-direction: column;
   }
   
   /* Styles for result header */
@@ -64,6 +63,7 @@
   /* Styles for result header h4 element */
   .result h4 {
     margin: 0;
+    font-size: 16px;
   }
   
   /* Margin for left side h4 element */
@@ -86,12 +86,12 @@
     min-width: 40vw;
     }
 
-.date-time {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+  .date-time {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
   
   .date-time p {
     margin: 0px;
@@ -100,6 +100,33 @@
   
   .result-left, .date-time, .result-right {
     width: 33% !important;
+  }
+
+  .match-date-time {
+    border: 2px solid #db0714;
+    max-width: 10vw;
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 0px;
+    background-color: #db0714;
+    color: #f1bb6f;
+  }
+
+  .match-container {
+    border: 2px solid #da0714;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    min-width: 100%;
+  }
+  
+  .match-date-time p {
+    margin: 0px;
+    font-size: 12px;
   }
 
   

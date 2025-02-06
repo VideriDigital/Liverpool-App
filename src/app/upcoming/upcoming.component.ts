@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FixturesService } from '../fixtures.service';
-import { UpcomingMatches } from '../shared/upcoming-match.model';
+import { Fixture } from '../shared/fixture.model';
 
 @Component({
   selector: 'app-upcoming',
@@ -9,7 +9,7 @@ import { UpcomingMatches } from '../shared/upcoming-match.model';
 })
 export class UpcomingComponent implements OnInit {
 
-  upcomingMatches: UpcomingMatches[] = [];
+  upcomingMatches: Fixture[] = [];
 
   constructor(private fixturesService: FixturesService) { }
 
@@ -18,22 +18,10 @@ export class UpcomingComponent implements OnInit {
   }
 
   fetchUpcomingMatches() {
-    this.fixturesService.fetchFixtures()
-    .subscribe(
-      (matches: any[]) => {
-        this.upcomingMatches = matches.map(match => {
-          return new UpcomingMatches(
-            match.homeTeam,
-            match.awayTeam,
-            match.league,
-            match.homeTeamLogo,
-            match.awayTeamLogo
-          );
-        });
-      },
-      error => {
-        console.error('Error fetching upcoming matches:', error);
+    this.fixturesService.fetchUpcoming().subscribe(
+      (response) => {
+        this.upcomingMatches = response;
       }
-    );
+    )
   }
 }

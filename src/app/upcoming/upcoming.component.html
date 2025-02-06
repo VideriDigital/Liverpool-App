@@ -3,16 +3,16 @@
     <hr>
     <div class="match" *ngFor="let match of upcomingMatches">
         <div class="match-date-time">
-                <p>{{ match.league }}</p>
+                <p>{{ match.league.name }}</p>
         </div>
         <div class="match-container">
             <div class="team home-team">
-                <img src="{{ match.homeTeamLogo}}" alt="">
-                <h4>{{ match.homeTeam }}</h4>
+                <img src="{{ match.teams.home.logo}}" alt="">
+                <h4>{{ match.teams.home.name }}</h4>
             </div>
             <div class="team away-team">
-                <img src="{{ match.awayTeamLogo}}" alt="">
-                <h4>{{ match.awayTeam }}</h4>
+                <img src="{{ match.teams.away.logo}}" alt="">
+                <h4>{{ match.teams.away.name }}</h4>
             </div>
         </div>
     </div>
