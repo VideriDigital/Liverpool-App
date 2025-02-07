@@ -69,3 +69,34 @@
 .team.home-team {
   border-right: 4px solid #db0714;
 }
+
+@media (max-width: 800px) {
+
+  .match-date-time {
+    width: 70vw !important;
+    max-width: 70vw !important;
+  }
+
+  .away-team h4,
+  .home-team h4 {
+    font-size: 13px !important;
+  }
+
+  .result {
+    width: 100%;
+  }
+
+.team img {
+  height: 50px;
+}
+
+.upcoming-container {
+  width: 100% !important;
+}
+
+:host {
+  width: 100%;
+}
+
+
+}

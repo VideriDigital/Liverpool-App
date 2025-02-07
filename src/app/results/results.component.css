@@ -1,132 +1,150 @@
 /* Base styles for result container */
 .result {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    flex-direction: column;
-  }
-  
-  /* Styles for result header */
-  .result h3 {
-    margin-inline-start: 15px;
-    color: #db0714;
-    border: 1px solid #db0714;
-    padding: 5px 13px;
-    border-radius: 50%;
-    line-height: 1;
-  }
-  
-  /* Styles for left side of the result container */
-  .result-left {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  
-  /* Styles for right side of the result container */
-  .result-right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: row;
-  }
-  
-  /* Hover effect for the result container */
-  .result:hover {
-    border-color: #f0b669;
-  }
-  
-  /* Additional styles for result container in specific context */
-  .result.box-sizing {
-    box-sizing: border-box;
-  }
-  
-  /* Additional styles for header in specific context */
-  .result h3 {
-    color: #fff;
-  }
-  
-  
-  /* Styles for score display */
-  .score {
-    background-color: #d90714;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    border-radius: 3px 0px 0px 3px;
-  }
-  
-  /* Styles for result header h4 element */
-  .result h4 {
-    margin: 0;
-    font-size: 16px;
-  }
-  
-  /* Margin for left side h4 element */
-  .result-left h4 {
-    margin-inline-start: 20px;
-  }
-  
-  /* Margin for right side h4 element */
-  .result-right h4 {
-    margin-inline-end: 20px;
-  }
-  
-  /* Margin for h3 element inside score */
-  .score h3 {
-    margin: 10px;
-  }
-  
-  .results-container {
-    width: 100%;
-    min-width: 40vw;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  flex-direction: column;
+}
 
-  .date-time {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-  
-  .date-time p {
-    margin: 0px;
-    font-size: 12px;
-  }
-  
-  .result-left, .date-time, .result-right {
-    width: 33% !important;
-  }
+/* Styles for result header */
+.result h3 {
+  margin-inline-start: 15px;
+  color: #db0714;
+  border: 1px solid #db0714;
+  padding: 5px 13px;
+  border-radius: 50%;
+  line-height: 1;
+}
+
+/* Styles for left side of the result container */
+.result-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Styles for right side of the result container */
+.result-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* Hover effect for the result container */
+.result:hover {
+  border-color: #f0b669;
+}
+
+/* Additional styles for result container in specific context */
+.result.box-sizing {
+  box-sizing: border-box;
+}
+
+/* Additional styles for header in specific context */
+.result h3 {
+  color: #fff;
+}
+
+
+/* Styles for score display */
+.score {
+  background-color: #d90714;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  border-radius: 3px 0px 0px 3px;
+}
+
+/* Styles for result header h4 element */
+.result h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Margin for left side h4 element */
+.result-left h4 {
+  margin-inline-start: 20px;
+}
+
+/* Margin for right side h4 element */
+.result-right h4 {
+  margin-inline-end: 20px;
+}
+
+/* Margin for h3 element inside score */
+.score h3 {
+  margin: 10px;
+}
+
+.results-container {
+  width: 100%;
+  min-width: 40vw;
+}
+
+.date-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.date-time p {
+  margin: 0px;
+  font-size: 12px;
+}
+
+.result-left,
+.date-time,
+.result-right {
+  width: 33% !important;
+}
+
+.match-date-time {
+  border: 2px solid #db0714;
+  max-width: 10vw;
+  display: flex;
+  flex-direction: column;
+  width: 10vw;
+  text-align: center;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 0px;
+  background-color: #db0714;
+  color: #f1bb6f;
+}
+
+.match-container {
+  border: 2px solid #da0714;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  min-width: 100%;
+}
+
+.match-date-time p {
+  margin: 0px;
+  font-size: 12px;
+}
+
+@media (max-width: 800px) {
 
   .match-date-time {
-    border: 2px solid #db0714;
-    max-width: 10vw;
-    display: flex;
-    flex-direction: column;
-    width: 10vw;
-    text-align: center;
-    border-radius: 10px 10px 0px 0px;
-    border-bottom: 0px;
-    background-color: #db0714;
-    color: #f1bb6f;
+    width: 70vw !important;
+    max-width: 70vw !important;
   }
 
-  .match-container {
-    border: 2px solid #da0714;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    min-width: 100%;
-  }
-  
-  .match-date-time p {
-    margin: 0px;
-    font-size: 12px;
+  .result-right h4,
+  .result-left h4 {
+    font-size: 13px !important;
   }
 
-  
+  .result {
+    width: 100%;
+  }
+
+}
